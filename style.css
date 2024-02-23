@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Geogrotesque Light';
+    src: url('Multimedia/Geogrotesque\ Light.otf');
+}
+
+body {
+    font-family: "Geogrotesque Light", sans-serif;
+    background-color: #121F45;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+#Inicio {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #121F45, #e5e5f7), repeating-radial-gradient(circle at center center, #121F45, #121F45, 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.BG {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #121F45, #e5e5f7), repeating-radial-gradient(circle at center center, #121F45, #121F45, 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
+}
+
+#Logo_MiTrabajo {
+    object-position: unset !important;
+    height: auto !important;
+}
+
+#Perfil {
+    backdrop-filter: blur(100px);
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Logros {
+    backdrop-filter: blur(100px);
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#Foto_Perfil {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#Foto_Perfil img {
+    width: 200px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin: auto;
+}
+
+#Informacion_Perfil {
+    width: 60%;
+}
+
+#Contacto {
+
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#Formulario {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#Foto_Formulario {
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#Foto_Formulario img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #0A0A0A;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+}
+
+.Logo {
+    height: 20px;
+}
+
+#Sobre_Mi {
+    display: flex;
+}
+
+#Fotografias_Sobre_Mi {
+    width: 50%;
+    padding: 20px;
+}
+
+#Biografia {
+    width: 50%;
+    padding: 20px;
+}
+
+#mi_trabajo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#mi_trabajo img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+@media (max-width: 768px) {
+    #Sobre_Mi {
+        flex-direction: column;
+    }
+
+    #Fotografias_Sobre_Mi {
+        width: 100%;
+    }
+
+    #Fotografias_Sobre_Mi img {
+        width: 100%;
+    }
+
+    #Biografia {
+        width: 100%;
+    }
+
+    #Foto_Formulario {
+        display: none;
+    }
+
+    #Formulario {
+        width: 100%;
+    }
+
+    .section_form {
+        flex-direction: column;
+    }
+
+    .select_form {
+        width: 30%;
+    }
+
+    #mi_trabajo {
+        margin-top: 40px;
+    }
+
+    #mi_trabajo .card {
+        margin-bottom: 40px;
+    }
+
+    #content_inicio {
+        width: 90% !important;
+    }
+
+    #Inicio {
+        height: auto;
+    }
+
+    #Perfil {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    #Foto_Perfil {
+        width: 100%;
+    }
+
+    #Informacion_Perfil {
+        width: 100%;
+    }
+
+    #Informacion_Perfil h5 {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    table,
+    thead,
+    tr,
+    tbody,
+    th,
+    td {
+        text-align: center;
+    }
+
+    #Logros {
+        padding: 10px;
+    }
+
+    #Logros .accordion {
+        width: 90% !important;
+    }
+}
